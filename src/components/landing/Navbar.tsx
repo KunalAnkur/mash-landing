@@ -26,7 +26,7 @@ const Navbar = () => {
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         isScrolled
-          ? "bg-background/80 backdrop-blur-xl border-b border-border/50 py-3"
+          ? "bg-[#18181b]/90 backdrop-blur-xl border-b border-white/10 py-3"
           : "bg-transparent py-5"
       )}
     >
@@ -43,7 +43,7 @@ const Navbar = () => {
               <a
                 key={link.label}
                 href={link.href}
-                className="text-muted-foreground hover:text-foreground transition-colors font-medium"
+                className="text-white/70 hover:text-white transition-colors font-medium"
               >
                 {link.label}
               </a>
@@ -67,7 +67,7 @@ const Navbar = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 text-foreground"
+            className="md:hidden p-2 text-white/70"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -77,19 +77,19 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden absolute top-full left-0 right-0 bg-background/95 backdrop-blur-xl border-b border-border/50 py-6 px-4">
+          <div className="md:hidden absolute top-full left-0 right-0 bg-[#18181b]/95 backdrop-blur-xl border-b border-white/10 py-6 px-4">
             <div className="flex flex-col gap-4">
               {navLinks.map((link) => (
                 <a
                   key={link.label}
                   href={link.href}
-                  className="text-lg text-muted-foreground hover:text-foreground transition-colors font-medium py-2"
+                  className="text-lg text-white/70 hover:text-white transition-colors font-medium py-2"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {link.label}
                 </a>
               ))}
-              <div className="flex flex-col gap-3 pt-4 border-t border-border/50">
+              <div className="flex flex-col gap-3 pt-4 border-t border-white/10">
                 <Button variant="ghost" asChild className="w-full">
                   <a href="https://app.movmash.com" target="_blank" rel="noopener noreferrer">
                     Sign In

@@ -42,15 +42,15 @@ const faqs = [
 
 const FAQSection = () => {
   return (
-    <section id="faq" className="py-24 bg-secondary/30">
+    <section id="faq" className="py-24 bg-white/[0.02]">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold font-display mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold font-display mb-4 text-white">
             Frequently Asked{" "}
             <span className="text-gradient">Questions</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xl text-white/70 max-w-2xl mx-auto">
             Got questions? We've got answers.
           </p>
         </div>
@@ -62,12 +62,12 @@ const FAQSection = () => {
               <AccordionItem
                 key={index}
                 value={`item-${index}`}
-                className="bg-card/50 border border-border/50 rounded-xl px-6 overflow-hidden"
+                className="bg-white/5 border border-white/10 rounded-xl px-6 overflow-hidden data-[state=open]:border-pink-400/30"
               >
-                <AccordionTrigger className="text-left text-lg font-semibold hover:text-primary hover:no-underline py-5">
+                <AccordionTrigger className="text-left text-lg font-semibold text-white/90 hover:text-pink-400 hover:no-underline py-5">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground pb-5 text-base leading-relaxed">
+                <AccordionContent className="text-white/60 pb-5 text-base leading-relaxed">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>

@@ -3,22 +3,22 @@ import { Button } from "@/components/ui/button";
 
 const CTASection = () => {
   return (
-    <section className="py-24 relative overflow-hidden">
+    <section className="py-24 relative overflow-hidden bg-[#18181b]">
       {/* Background Effects */}
       <div className="absolute inset-0">
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-coral/20 rounded-full blur-[128px] animate-pulse-glow" />
-        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-purple/20 rounded-full blur-[128px] animate-pulse-glow" style={{ animationDelay: '1.5s' }} />
+        <div className="absolute top-0 left-1/4 w-96 h-96 bg-rose-500/20 rounded-full blur-[128px] animate-pulse-glow" />
+        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-fuchsia-500/20 rounded-full blur-[128px] animate-pulse-glow" style={{ animationDelay: '1.5s' }} />
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           {/* Heading */}
-          <h2 className="text-4xl md:text-6xl font-bold font-display mb-6">
+          <h2 className="text-4xl md:text-6xl font-bold font-display mb-6 text-white">
             Ready for Your Next{" "}
             <span className="text-gradient">Watch Party?</span>
           </h2>
           
-          <p className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto">
+          <p className="text-xl text-white/70 mb-10 max-w-2xl mx-auto">
             Join thousands of friends, families, and communities watching together every day.
           </p>
 
@@ -39,7 +39,7 @@ const CTASection = () => {
           </div>
 
           {/* Trust badges */}
-          <div className="mt-12 flex flex-wrap items-center justify-center gap-6 text-sm text-muted-foreground">
+          <div className="mt-12 flex flex-wrap items-center justify-center gap-6 text-sm text-white/50">
             <div className="flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-green-500" />
               Free forever
