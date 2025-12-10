@@ -1,19 +1,19 @@
-import { Play, Users, Tv, Sparkles } from "lucide-react";
+import { Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#18181b]">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0">
         <img 
           src={heroBg} 
           alt="Watch party background" 
-          className="w-full h-full object-cover opacity-40"
+          className="w-full h-full object-cover opacity-30"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_hsl(var(--coral)/0.15)_0%,_transparent_70%)]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#18181b]/80 via-[#18181b]/60 to-[#18181b]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(244,114,182,0.12)_0%,_transparent_70%)]" />
       </div>
 
       {/* Floating Emojis */}
@@ -30,18 +30,18 @@ const HeroSection = () => {
         <div className="max-w-4xl mx-auto">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass mb-8 animate-slide-up">
-            <Sparkles className="w-4 h-4 text-primary" />
-            <span className="text-sm font-medium">Watch together, anywhere</span>
+            <span className="w-2 h-2 rounded-full bg-gradient-to-r from-rose-400 to-fuchsia-400" />
+            <span className="text-sm font-medium text-white/70">Watch together, anywhere</span>
           </div>
 
           {/* Main Headline */}
-          <h1 className="text-5xl md:text-7xl font-bold font-display mb-6 animate-slide-up stagger-1">
+          <h1 className="text-5xl md:text-7xl font-bold font-display mb-6 animate-slide-up stagger-1 text-white">
             Movie Night,{" "}
             <span className="text-gradient">Reimagined</span>
           </h1>
 
           {/* Subheadline */}
-          <p className="text-xl md:text-2xl text-muted-foreground mb-10 max-w-2xl mx-auto animate-slide-up stagger-2">
+          <p className="text-xl md:text-2xl text-white/70 mb-10 max-w-2xl mx-auto animate-slide-up stagger-2">
             Watch videos together with friends in perfect sync. 
             Chat, react, and share the moment — no matter the distance.
           </p>
@@ -65,15 +65,15 @@ const HeroSection = () => {
           <div className="grid grid-cols-3 gap-8 max-w-lg mx-auto animate-slide-up stagger-4">
             <div className="text-center">
               <div className="text-3xl font-bold text-gradient font-display">10K+</div>
-              <div className="text-sm text-muted-foreground">Active Users</div>
+              <div className="text-sm text-white/50">Active Users</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-gradient font-display">50K+</div>
-              <div className="text-sm text-muted-foreground">Watch Parties</div>
+              <div className="text-sm text-white/50">Watch Parties</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-gradient font-display">99.9%</div>
-              <div className="text-sm text-muted-foreground">Uptime</div>
+              <div className="text-sm text-white/50">Uptime</div>
             </div>
           </div>
         </div>
@@ -81,8 +81,8 @@ const HeroSection = () => {
 
       {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 rounded-full border-2 border-muted-foreground/50 flex items-start justify-center p-2">
-          <div className="w-1 h-2 rounded-full bg-primary animate-pulse" />
+        <div className="w-6 h-10 rounded-full border-2 border-white/30 flex items-start justify-center p-2">
+          <div className="w-1 h-2 rounded-full bg-gradient-to-b from-rose-400 to-fuchsia-400 animate-pulse" />
         </div>
       </div>
     </section>

@@ -9,14 +9,14 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg shadow-primary/20",
+        default: "bg-gradient-to-r from-rose-400 via-pink-400 to-fuchsia-400 text-zinc-900 font-bold shadow-lg shadow-pink-500/30 hover:shadow-pink-500/50 hover:scale-105",
         destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90",
-        outline: "border border-border bg-transparent text-foreground hover:bg-secondary hover:border-primary/50",
-        secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
-        ghost: "text-foreground hover:bg-secondary hover:text-foreground",
-        link: "text-primary underline-offset-4 hover:underline",
-        hero: "bg-gradient-primary text-primary-foreground shadow-lg shadow-primary/40 hover:opacity-90 hover:scale-105",
-        glass: "backdrop-blur-xl bg-card/60 border border-border/50 text-foreground hover:bg-card/80 hover:border-primary/30",
+        outline: "border border-white/20 bg-transparent text-white/70 hover:bg-white/10 hover:border-pink-400/50 hover:text-white",
+        secondary: "bg-white/10 text-white/70 hover:bg-white/15 hover:text-white",
+        ghost: "text-white/70 hover:bg-white/10 hover:text-white",
+        link: "text-pink-400 underline-offset-4 hover:underline",
+        hero: "bg-gradient-to-r from-rose-400 via-pink-400 to-fuchsia-400 text-zinc-900 font-bold shadow-lg shadow-pink-500/40 hover:shadow-pink-500/60 hover:scale-105",
+        glass: "glass glass-hover text-white/70 hover:text-white",
       },
       size: {
         default: "h-10 px-5 py-2",
