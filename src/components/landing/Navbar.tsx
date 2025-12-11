@@ -57,39 +57,38 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <nav className="flex items-center justify-between relative">
           {/* Logo */}
-          <a href="/" className="flex items-center gap-2.5 z-10">
+          <a href="/" className="flex items-center gap-3 z-10 hover:opacity-80 transition-opacity">
             <img 
               src="/assets/logo.svg" 
               alt="Movmash Logo" 
               className="w-8 h-8 md:w-10 md:h-10"
             />
-            <span className="text-xl md:text-2xl font-bold font-display text-gradient">Movmash</span>
+            <span className="text-xl md:text-2xl font-bold font-display text-white">Movmash</span>
           </a>
 
           {/* Desktop Navigation - Centered */}
-          <div className="hidden lg:flex items-center gap-8 absolute left-1/2 -translate-x-1/2">
+          <div className="hidden lg:flex items-center gap-10 absolute left-1/2 -translate-x-1/2">
             {navLinks.map((link) => (
               <a
                 key={link.label}
                 href={link.href}
                 onClick={(e) => handleNavLinkClick(e, link.hash)}
-                className="text-white/70 hover:text-white transition-colors font-medium text-sm relative group"
+                className="text-white/80 hover:text-white transition-all duration-300 font-medium text-base px-3 py-2 rounded-lg hover:bg-white/5"
               >
                 {link.label}
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[#e11d48] via-[#db2777] to-[#c026d3] group-hover:w-full transition-all duration-300" />
               </a>
             ))}
           </div>
 
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center gap-3 z-10">
-            <Button variant="ghost" asChild>
+            <Button variant="ghost" asChild className="hover:bg-white/10">
               <a href="https://app.movmash.com" target="_blank" rel="noopener noreferrer">
                 Sign In
               </a>
             </Button>
             <Button variant="hero" asChild>
-              <a href="https://app.movmash.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://app.movmash.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                 <Play className="w-4 h-4" />
                 Start Party
               </a>
@@ -109,16 +108,15 @@ const Navbar = () => {
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
           <div className="md:hidden absolute top-full left-0 right-0 bg-[#18181b]/95 backdrop-blur-xl border-b border-white/10 py-6 px-4 animate-slide-up">
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-3">
               {navLinks.map((link) => (
                 <a
                   key={link.label}
                   href={link.href}
                   onClick={(e) => handleNavLinkClick(e, link.hash)}
-                  className="text-lg text-white/70 hover:text-white transition-colors font-medium py-2 relative group"
+                  className="text-lg text-white/80 hover:text-white hover:bg-white/5 transition-all duration-300 font-medium py-3 px-4 rounded-lg"
                 >
                   {link.label}
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[#e11d48] via-[#db2777] to-[#c026d3] group-hover:w-full transition-all duration-300" />
                 </a>
               ))}
               <div className="flex flex-col gap-3 pt-4 border-t border-white/10">
