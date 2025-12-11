@@ -9,13 +9,13 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-gradient-to-r from-rose-400 via-pink-400 to-fuchsia-400 text-zinc-900 font-bold shadow-lg shadow-pink-500/30 hover:shadow-pink-500/50 hover:scale-105",
+        default: "bg-gradient-to-r from-[#e11d48] via-[#db2777] to-[#c026d3] text-white font-bold shadow-lg shadow-rose-600/30 hover:shadow-rose-600/50 hover:scale-105",
         destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90",
-        outline: "border border-white/20 bg-transparent text-white/70 hover:bg-white/10 hover:border-pink-400/50 hover:text-white",
+        outline: "border border-white/20 bg-transparent text-white/70 hover:bg-white/10 hover:border-rose-500/50 hover:text-white",
         secondary: "bg-white/10 text-white/70 hover:bg-white/15 hover:text-white",
         ghost: "text-white/70 hover:bg-white/10 hover:text-white",
-        link: "text-pink-400 underline-offset-4 hover:underline",
-        hero: "bg-gradient-to-r from-rose-400 via-pink-400 to-fuchsia-400 text-zinc-900 font-bold shadow-lg shadow-pink-500/40 hover:shadow-pink-500/60 hover:scale-105",
+        link: "text-rose-400 underline-offset-4 hover:underline",
+        hero: "bg-gradient-to-r from-[#e11d48] via-[#db2777] to-[#c026d3] text-white font-bold shadow-lg shadow-rose-600/40 hover:shadow-rose-600/60 hover:scale-105",
         glass: "glass glass-hover text-white/70 hover:text-white",
       },
       size: {

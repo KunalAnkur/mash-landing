@@ -47,6 +47,12 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        // Costume app colors
+        primaryDark: "var(--primaryDark)",
+        secondaryDark: "var(--secondaryDark)",
+        hover: "var(--hover)",
+        smoothWhite: "var(--smoothWhite)",
+        cardBg: "var(--cardBg)",
         coral: "hsl(var(--coral))",
         amber: "hsl(var(--amber))",
         purple: "hsl(var(--purple))",
@@ -65,6 +71,11 @@ export default {
       fontFamily: {
         sans: ['Plus Jakarta Sans', 'sans-serif'],
         display: ['Space Grotesk', 'sans-serif'],
+        parkinsans: ["var(--parkinsans)", "sans-serif"],
+      },
+      backgroundImage: {
+        secondary: "var(--secondary)",
+        logoColor: "var(--logoColor)",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -87,5 +98,8 @@ export default {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [
+    // @ts-ignore - tailwindcss-animate is a CommonJS module
+    require("tailwindcss-animate"),
+  ],
 } satisfies Config;

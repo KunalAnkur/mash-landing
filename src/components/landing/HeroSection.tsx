@@ -13,7 +13,7 @@ const HeroSection = () => {
           className="w-full h-full object-cover opacity-30"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-[#18181b]/80 via-[#18181b]/60 to-[#18181b]" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(244,114,182,0.12)_0%,_transparent_70%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(225,29,72,0.12)_0%,_transparent_70%)]" />
       </div>
 
       {/* Floating Emojis */}
@@ -30,7 +30,7 @@ const HeroSection = () => {
         <div className="max-w-4xl mx-auto">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass mb-8 animate-slide-up">
-            <span className="w-2 h-2 rounded-full bg-gradient-to-r from-rose-400 to-fuchsia-400" />
+            <span className="w-2 h-2 rounded-full bg-gradient-to-r from-[#e11d48] via-[#db2777] to-[#c026d3]" />
             <span className="text-sm font-medium text-white/70">Watch together, anywhere</span>
           </div>
 
@@ -82,7 +82,7 @@ const HeroSection = () => {
       {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
         <div className="w-6 h-10 rounded-full border-2 border-white/30 flex items-start justify-center p-2">
-          <div className="w-1 h-2 rounded-full bg-gradient-to-b from-rose-400 to-fuchsia-400 animate-pulse" />
+          <div className="w-1 h-2 rounded-full bg-gradient-to-b from-[#e11d48] via-[#db2777] to-[#c026d3] animate-pulse" />
         </div>
       </div>
     </section>
