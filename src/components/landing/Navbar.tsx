@@ -83,8 +83,8 @@ const Navbar = () => {
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center gap-3 z-10">
             <Button variant="ghost" asChild className="hover:bg-white/10">
-              <a href="https://app.movmash.com" target="_blank" rel="noopener noreferrer">
-                Sign In
+              <a href="https://app.movmash.com/login" target="_blank" rel="noopener noreferrer">
+                Login
               </a>
             </Button>
             <Button variant="hero" asChild>
@@ -122,7 +122,7 @@ const Navbar = () => {
               <div className="flex flex-col gap-3 pt-4 border-t border-white/10">
                 <Button variant="ghost" asChild className="w-full">
                   <a href="https://app.movmash.com" target="_blank" rel="noopener noreferrer">
-                    Sign In
+                    Login
                   </a>
                 </Button>
                 <Button variant="hero" asChild className="w-full">
